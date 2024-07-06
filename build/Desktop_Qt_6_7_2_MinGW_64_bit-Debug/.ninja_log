@@ -1,0 +1,10 @@
+# ninja log v6
+33	166	7419787551595173	Routine_autogen/timestamp	ad62ddad45361589
+33	166	7419787551595173	D:/qtt/Routine/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Routine_autogen/mocs_compilation.cpp	ad62ddad45361589
+33	166	7419787551595173	Routine_autogen/mocs_compilation.cpp	ad62ddad45361589
+598	3216	7419786198315649	CMakeFiles/Routine.dir/Routine_autogen/mocs_compilation.cpp.obj	44dd51ab8c6453e2
+33	166	7419787551595173	D:/qtt/Routine/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Routine_autogen/timestamp	ad62ddad45361589
+166	5555	7419787552925177	CMakeFiles/Routine.dir/mainwindow.cpp.obj	b7671e87081d8f0
+601	3047	7419786198345642	CMakeFiles/Routine.dir/main.cpp.obj	699114435be479b8
+5555	5767	7419787606817155	Routine.exe	3b49d8bf5a39a31f
+1671	10721	7419652288944004	CMakeFiles/Routine.dir/custom_widget.cpp.obj	60b3c89003f8cce6
