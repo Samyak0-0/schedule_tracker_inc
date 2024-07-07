@@ -11,10 +11,9 @@
 #include <QColor>
 #include <QGridLayout>
 #include <QLabel>
-#include "custom_widget.h"
 #include <QPushButton>
 
-int i,j;
+#include "selection_page.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -30,239 +29,22 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_plus_clicked_1_1() {
-    courseCode[1][1]->setText("asdadas");
+void MainWindow::on_plus_clicked(int a, int b)
+{
+    if(courseCode[a][b]->text()=="+") {
+        courseCode[a][b]->setText("n");
+    } else {
+        courseCode[a][b]->setText("v");
+    }
+    selection_page selectionPage;
+    selectionPage.setModal(true);
+    selectionPage.exec();
+
 }
-
-void MainWindow::on_plus_clicked_1_2() {
-    courseCode[1][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_1_3() {
-    courseCode[1][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_1_4() {
-    courseCode[1][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_1_5() {
-    courseCode[1][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_1_6() {
-    courseCode[1][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_1_7() {
-    courseCode[1][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_1() {
-    courseCode[2][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_2() {
-    courseCode[2][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_3() {
-    courseCode[2][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_4() {
-    courseCode[2][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_5() {
-    courseCode[2][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_6() {
-    courseCode[2][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_2_7() {
-    courseCode[2][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_1() {
-    courseCode[3][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_2() {
-    courseCode[3][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_3() {
-    courseCode[3][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_4() {
-    courseCode[3][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_5() {
-    courseCode[3][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_6() {
-    courseCode[3][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_3_7() {
-    courseCode[3][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_1() {
-    courseCode[4][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_2() {
-    courseCode[4][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_3() {
-    courseCode[4][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_4() {
-    courseCode[4][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_5() {
-    courseCode[4][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_6() {
-    courseCode[4][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_4_7() {
-    courseCode[4][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_1() {
-    courseCode[5][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_2() {
-    courseCode[5][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_3() {
-    courseCode[5][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_4() {
-    courseCode[5][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_5() {
-    courseCode[5][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_6() {
-    courseCode[5][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_5_7() {
-    courseCode[5][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_1() {
-    courseCode[6][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_2() {
-    courseCode[6][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_3() {
-    courseCode[6][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_4() {
-    courseCode[6][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_5() {
-    courseCode[6][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_6() {
-    courseCode[6][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_6_7() {
-    courseCode[6][7]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_1() {
-    courseCode[7][1]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_2() {
-    courseCode[7][2]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_3() {
-    courseCode[7][3]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_4() {
-    courseCode[7][4]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_5() {
-    courseCode[7][5]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_6() {
-    courseCode[7][6]->setText("asdadas");
-}
-
-void MainWindow::on_plus_clicked_7_7() {
-    courseCode[7][7]->setText("asdadas");
-}
-
-
-// void MainWindow::on_plus_clicked()
-// {
-
-//     courseCode[7][7]->setText("asdadas");
-//     qDebug() << "A";
-// }
 
 
 void MainWindow::TableWidgetDisplay() {
 
-    // int columnNo=7, rowNo = 21;
-    // QTableWidget *table = new QTableWidget(this);
-    // table->setRowCount(rowNo);
-    // table->setColumnCount(columnNo);
-
-    // QStringList hlabels;
-    // hlabels << "9-10" << "10-11" << "11-12" << "12-1"
-    //         <<"1-2" << "2-3" << "3-4";
-    // table->setHorizontalHeaderLabels(hlabels);
-
-    // for(int i=0; i<rowNo; i++) {
-    //     QTableWidgetItem *item;
-
-    //     // item = new QTableWidgetItem;
-
-
-    //     for(int j=0; j<columnNo; j++) {
-
-    //         item = new QTableWidgetItem;
-    //         item->setText(QString::number(i+j));
-    //         table->setItem(i,j,item);
-
-    //         // item->setFlags(item->flags() & ~Qt::ItemIsSelectable);
-    //         // item->setBackground(Qt::NoBrush);
-    //     }
-    //     // table->setSpan(0,0,1,2);
 
     QGridLayout *layout = new QGridLayout(this);
     QStringList daysOfWeek;
@@ -272,11 +54,11 @@ void MainWindow::TableWidgetDisplay() {
     TimeofDay << " " << "9-10" << "10-11" << "11-12" << "12-1"
               <<"1-2" << "2-3" << "3-4";
 
-    for(i=0; i<=7; i++) {
+    for(int i=0; i<=7; i++) {
 
         QGridLayout *rowLayout = new QGridLayout(this);
 
-        for(j=0; j<=7; j++) {
+        for(int j=0; j<=7; j++) {
 
             courseCode[i][j] = new QPushButton("courseCode", this);
             courseCode[i][j]->setStyleSheet("QPushButton {border: none;}");
@@ -299,202 +81,9 @@ void MainWindow::TableWidgetDisplay() {
                 rowLayout->addWidget(courseCode[i][j], 0, j);
                 // rowLayout->addWidget(assignmentsDue, 1, j);
                 // rowLayout->addWidget(progressBar, 2, j);
-            }
-
-            if (i == 1 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_1);
-            }
-
-            if (i == 1 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_2);
-            }
-
-            if (i == 1 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_3);
-            }
-
-            if (i == 1 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_4);
-            }
-
-            if (i == 1 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_5);
-            }
-
-            if (i == 1 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_6);
-            }
-
-            if (i == 1 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_1_7);
-            }
-
-            if (i == 2 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_1);
-            }
-
-            if (i == 2 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_2);
-            }
-
-            if (i == 2 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_3);
-            }
-
-            if (i == 2 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_4);
-            }
-
-            if (i == 2 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_5);
-            }
-
-            if (i == 2 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_6);
-            }
-
-            if (i == 2 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_2_7);
-            }
-
-            if (i == 3 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_1);
-            }
-
-            if (i == 3 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_2);
-            }
-
-            if (i == 3 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_3);
-            }
-
-            if (i == 3 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_4);
-            }
-
-            if (i == 3 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_5);
-            }
-
-            if (i == 3 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_6);
-            }
-
-            if (i == 3 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_3_7);
-            }
-
-            if (i == 4 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_1);
-            }
-
-            if (i == 4 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_2);
-            }
-
-            if (i == 4 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_3);
-            }
-
-            if (i == 4 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_4);
-            }
-
-            if (i == 4 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_5);
-            }
-
-            if (i == 4 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_6);
-            }
-
-            if (i == 4 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_4_7);
-            }
-
-            if (i == 5 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_1);
-            }
-
-            if (i == 5 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_2);
-            }
-
-            if (i == 5 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_3);
-            }
-
-            if (i == 5 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_4);
-            }
-
-            if (i == 5 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_5);
-            }
-
-            if (i == 5 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_6);
-            }
-
-            if (i == 5 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_5_7);
-            }
-
-            if (i == 6 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_1);
-            }
-
-            if (i == 6 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_2);
-            }
-
-            if (i == 6 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_3);
-            }
-
-            if (i == 6 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_4);
-            }
-
-            if (i == 6 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_5);
-            }
-
-            if (i == 6 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_6);
-            }
-
-            if (i == 6 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_6_7);
-            }
-
-            if (i == 7 && j == 1) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_1);
-            }
-
-            if (i == 7 && j == 2) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_2);
-            }
-
-            if (i == 7 && j == 3) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_3);
-            }
-
-            if (i == 7 && j == 4) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_4);
-            }
-
-            if (i == 7 && j == 5) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_5);
-            }
-
-            if (i == 7 && j == 6) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_6);
-            }
-
-            if (i == 7 && j == 7) {
-                connect(courseCode[i][j], &QPushButton::clicked, this, &MainWindow::on_plus_clicked_7_7);
+                QObject::connect(courseCode[i][j], &QPushButton::clicked, [this,i,j]() {
+                    this->on_plus_clicked(i,j);
+                });
             }
 
 

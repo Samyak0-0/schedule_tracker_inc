@@ -257,15 +257,15 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/qtt/Routine/custom_widget.h",
-			"MU",
-			"EWIEGA46WW/moc_custom_widget.cpp",
-			null
-		],
-		[
 			"D:/qtt/Routine/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"D:/qtt/Routine/selection_page.h",
+			"MU",
+			"EWIEGA46WW/moc_selection_page.cpp",
 			null
 		]
 	],
@@ -340,9 +340,9 @@
 	"SETTINGS_FILE" : "D:/qtt/Routine/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Routine_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/qtt/Routine/custom_widget.cpp", "MU", null ],
 		[ "D:/qtt/Routine/main.cpp", "MU", null ],
-		[ "D:/qtt/Routine/mainwindow.cpp", "MU", null ]
+		[ "D:/qtt/Routine/mainwindow.cpp", "MU", null ],
+		[ "D:/qtt/Routine/selection_page.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

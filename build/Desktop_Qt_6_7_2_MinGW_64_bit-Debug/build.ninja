@@ -73,9 +73,9 @@ build CMakeFiles/Routine.dir/mainwindow.cpp.obj: CXX_COMPILER__Routine_unscanned
   OBJECT_DIR = CMakeFiles\Routine.dir
   OBJECT_FILE_DIR = CMakeFiles\Routine.dir
 
-build CMakeFiles/Routine.dir/custom_widget.cpp.obj: CXX_COMPILER__Routine_unscanned_Debug D$:/qtt/Routine/custom_widget.cpp || cmake_object_order_depends_target_Routine
+build CMakeFiles/Routine.dir/selection_page.cpp.obj: CXX_COMPILER__Routine_unscanned_Debug D$:/qtt/Routine/selection_page.cpp || cmake_object_order_depends_target_Routine
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\Routine.dir\custom_widget.cpp.obj.d
+  DEP_FILE = CMakeFiles\Routine.dir\selection_page.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -ID:/qtt/Routine/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Routine_autogen/include -isystem D:/Qt/6.7.2/mingw_64/include/QtCore -isystem D:/Qt/6.7.2/mingw_64/include -isystem D:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.7.2/mingw_64/include/QtWidgets -isystem D:/Qt/6.7.2/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\Routine.dir
@@ -89,7 +89,7 @@ build CMakeFiles/Routine.dir/custom_widget.cpp.obj: CXX_COMPILER__Routine_unscan
 #############################################
 # Link the executable Routine.exe
 
-build Routine.exe: CXX_EXECUTABLE_LINKER__Routine_Debug CMakeFiles/Routine.dir/Routine_autogen/mocs_compilation.cpp.obj CMakeFiles/Routine.dir/main.cpp.obj CMakeFiles/Routine.dir/mainwindow.cpp.obj CMakeFiles/Routine.dir/custom_widget.cpp.obj | D$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a D$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Routine_autogen Routine_autogen_timestamp_deps
+build Routine.exe: CXX_EXECUTABLE_LINKER__Routine_Debug CMakeFiles/Routine.dir/Routine_autogen/mocs_compilation.cpp.obj CMakeFiles/Routine.dir/main.cpp.obj CMakeFiles/Routine.dir/mainwindow.cpp.obj CMakeFiles/Routine.dir/selection_page.cpp.obj | D$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a D$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Routine_autogen Routine_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  D:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  D:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -176,7 +176,7 @@ build Routine_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Routine_autogen
 
-build Routine_autogen: phony CMakeFiles/Routine_autogen Routine_autogen/include/ui_mainwindow.h Routine_autogen/timestamp Routine_autogen/mocs_compilation.cpp Routine_autogen_timestamp_deps
+build Routine_autogen: phony CMakeFiles/Routine_autogen Routine_autogen/include/ui_mainwindow.h Routine_autogen/include/ui_selection_page.h Routine_autogen/timestamp Routine_autogen/mocs_compilation.cpp Routine_autogen_timestamp_deps
 
 
 #############################################
@@ -193,7 +193,7 @@ build Routine_autogen/timestamp Routine_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles\Routine_autogen
 
-build CMakeFiles/Routine_autogen Routine_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/Routine_autogen ${cmake_ninja_workdir}Routine_autogen/include/ui_mainwindow.h: phony Routine_autogen/timestamp || Routine_autogen_timestamp_deps
+build CMakeFiles/Routine_autogen Routine_autogen/include/ui_mainwindow.h Routine_autogen/include/ui_selection_page.h | ${cmake_ninja_workdir}CMakeFiles/Routine_autogen ${cmake_ninja_workdir}Routine_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}Routine_autogen/include/ui_selection_page.h: phony Routine_autogen/timestamp || Routine_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
